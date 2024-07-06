@@ -44,51 +44,104 @@ header #logo{
     font-size: 100%x;
     letter-spacing: 1.5px;
 }
-/*menu bar styling for mobile*/
-#btn-menu{
-    text-align: center;
+
+/* Menu bar styling for mobile */
+.nav-toggle {
+    display: none;
 }
-#btn-menu i{
+
+.nav-toggle-label {
     font-size: 2.5rem;
+    
 }
-#btn-menu:hover~nav{
-    display: block;
-}
-/*menu items styling*/
-nav{
+
+/* Menu items styling */
+nav {
     position: absolute;
-    left: 86%;
+    left: 0;
     top: 100%;
     display: none;
     z-index: 1;
-    padding: 0 1rem;
+    padding: 1rem;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
-    
-    
+    background-color: #ffffff;
 }
-#menu{
+
+#menu {
     list-style-type: none;
     font-size: 110%;
     letter-spacing: 2px;
-    
 }
-#menu>li{
+
+#menu>li {
     margin-bottom: 1em;
-    
-    
+    text-align: center;
 }
-#menu li a{
+
+#menu li a {
     text-decoration: none;
     color: black;
     display: block;
 }
-#menu li a:hover{
+
+#menu li a:hover {
     color: #ffffff;
-    background-color: #ab47bc;;
+    background-color: #ab47bc;
 }
 
+/* Show menu when checkbox is checked */
+.nav-toggle:checked + .nav-toggle-label + nav {
+    display: block;
+}
 
+/* media query for screen from tablet to large screen*/
+@media screen and (min-width:768px){
+    nav{
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+        background-color: #ab47bc;
+        width: 50%;
+        
+    }
+    #menu{
+        display: flex;
+        
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu > li{
+        /*padding-left: 1rem;*/
+        margin: 0 auto;
+        
+        
+        
+    }
+    #menu>li>a{
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        
+        
+    }
+    #menu li a:hover{
+      background-color: #ffffff;
+      color: #3a3a3a;
+
+    }
+    .nav-toggle-label{
+        display: none;
+    }
+    #logo{
+        font-size: 280%;
+        margin:0 0.5rem ;
+        line-height: 75px;
+    }
+}
 
 
 
