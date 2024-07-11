@@ -13,9 +13,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
-    
-    /* Font styles*/
     font-family: "Lora", serif;
 }
 
@@ -25,38 +22,226 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    position: fixed;
-    background-color: #1ea6b7;
+    
+    background-color: #2d7594;
     padding: 0 1rem;
     width: 100%;
+    
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 /* Name of Website styling */
-header>a {
+header>#logo {
     text-decoration: none;
+    width: fit-content;
+    height: 80px;
+      
 }
-
-header #logo {
+header #logo-heading {
     color: #ffffff;
-    font-size: 200%;
+    font-size: 50px;
     letter-spacing: 1.5px;
 }
 
-/* Menu bar styling for mobile */
+/* Menu bar styling for large screens */
+
 .nav-toggle {
+    /*to hide the menu bar checkbox for large screens*/
     display: none;
 }
 
 .nav-toggle-label {
-    font-size: 2.5rem;
+     /*to hide the menu bar for large screens */
+  display: none;
 }
+/*nav links tag* for large screens*/
+header nav{
+    width: 40%;
+    padding: 1.5vw;
+    
+}
+#menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    text-align: center;
+}
+#menu li{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    
+}
+#menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 110%;
+    display: block;
+    font-weight: 500;
+    padding: 10px 5px;
+   
+    
+}
+/*adding hover effects on the menu items*/
+#menu li a:hover{
+    background-color:#ffffff;
+    color: #0b8b8d;
+}
+/*main element styling*/
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+/*first section hero styling */
+#hero-section{
+    /*adding background image*/
+    background: url("../images/koshka-kot-temnyi-ochki-rubashka-zheltyi-fon.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/*inside tags of hero-section elements h1, h3 and p styling*/
+#hero-section h1{
+    background-color: #00796bab;
+    color: white;
+    position: absolute;
+    width: 50%;
+    height: 14%;
+    padding: 1rem;
+    text-align: center;
+    top: 100px;
+    left: 50px;
+    font-size:xx-large;
+    border: 1px solid yellow;
+}
+#hero-section h3{
+    background-color: #00796bab;
+    color: white;
+    position: absolute;
+    width: 50%;
+    padding: 1.5rem;
+    height: 14%;
+    text-align: center;
+    top: 190px;
+    left: 100px;
+    font-size: large;
+    border: 1px solid yellow;
+    vertical-align:middle;
+}
+#hero-section p{
+    background-color: #00796bab;
+    color: white;
+    position: absolute;
+    width: 50%;
+    padding: 1.5rem;
+    border: 1px solid yellow;
+    font-weight: 600;
+    text-align: justify;
+    top: 280px;
+    left: 150px;
+}
+/*inside tag of anchor element styling*/
+#cta-button{
+    text-decoration: none;
+    background-color: rgb(255, 187, 0);
+    padding: 1rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+#cta-button:hover{
+    background-color: yellow;
+    color: black;
+}
+/*Media query for mobile and tablet screens*/
+@media screen and (max-width: 767px){
+    header {
+        
+        
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+    
+    } 
+    header>#logo {
+        
+        height: fit-content;
+        
+        
+    }
+    header #logo-heading {
+        
+        font-size: 5vw;
+        letter-spacing: 0.5px;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    
+    .nav-toggle-label {
+        font-size: 2.5rem;
+        display: block;
+        
+    }
+    header nav{
+        width: 100%;
+        display: none;
+        border: 1px solid black;
+        position: absolute;
+        top: 51px;
+        left: 0;
+        background-color: #ffffff;
+        
+    }
+    #menu{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+        text-align: center;
+    }
+    #menu li{
+        
+       display: block;
+       text-align: center;
+       width: 100%;
+       
+        
+    }
+    #menu li a{
+        
+        color: #3a3a3a;
+        padding: 20px;
+        
+    }
+    #menu li a:hover{
+        background-color: #2d7594;
+        color: #ffffff;
+    }
+    .nav-toggle:checked + .nav-toggle-label + nav {
+        display: block;
+        
+    }
+    
+    .nav-toggle-label i {
+        color: #ffffff;
+    }
+    
 
+}
 /* Menu items styling */
-nav {
+/*nav {
     position: absolute;
     left: 0;
     top: 100%;
@@ -87,65 +272,82 @@ nav {
 
 #menu li a:hover {
     color: #f0f0f0;
-    background-color:  #1ea6b7;
-}
+    background-color: #1ea6b7;
+}*/
 
 /* Show menu when checkbox is checked */
-.nav-toggle:checked + .nav-toggle-label + nav {
+/*.nav-toggle:checked + .nav-toggle-label + nav {
     display: block;
     z-index: 200;
 }
 
 .nav-toggle-label i {
     color: #ffffff;
-}
+}*/
 
 /* Main element styling */
-main {
+/*main {
     flex: 1 0 auto;
     margin-top: 54px;
     width: 100%;
-    position: relative;
-    z-index: -12;
+    border: 1px solid black;
+    
 }
+main h1{
+    border: 1px solid black;
+    margin-top: 100px;
+}
+main h1:hover{
+    background-color: brown;
+}*/
 
 /* Styling to add wallpaper for the content of the hero-content */
-#hero{
+/*#hero {
     height: 600px;
     width: 100%;
     background: url("../images/koshka-kot-temnyi-ochki-rubashka-zheltyi-fon.jpg") no-repeat center center/cover;
     position: relative;
-    
-}
-/* hero-content styling inside of hero section*/
-#hero-content{
+    z-index: -12;
+    border: 1px solid black;
+}*/
+
+/* hero-content styling inside of hero section */
+/*#hero-content {
     position: absolute;
     top: 15px;
     left: 32px;
     width: 86vw;
     background-color: rgb(22 97 108 / 67%);
-    /*flex property added to control the flow of content of the hero section*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    z-index: 200;
 }
-/*styling added for h1, h3, p and button element*/
-#hero-content>h1 {
-  border: 1px solid wheat;
-   padding: 4%;
+#hero-content h1{
+    border: 2px solid wheat;
+    padding: 4%;
     text-align: center;
     color: #ffffff;
 }
-#hero-content>h3 {
+#hero-content h1:hover{
+    background-color: black;
+}
+/* Styling for h1, h3, p, and button elements */
+/*#hero-content >h1 {
+    border: 1px solid wheat;
+    padding: 4%;
+    text-align: center;
+    color: #ffffff;
+}
+
+#hero-content >h3 {
     border: 1px solid wheat;
     padding: 2%;
     text-align: center;
     color: #ffffff;
 }
-
-#hero-content>p {
-   
+#hero-content >p {
     padding: 2rem;
     text-align: center;
     color: #ffffff;
@@ -153,34 +355,37 @@ main {
     font-weight: 500;
     font-size: 1rem;
 }
-/*button of hero content styling*/
-#cta-button{
-    background-color:rgba(247, 190, 5, 0.705);;
+
+p:hover{
+    background-color: tan;
+}*/
+
+/* Button of hero content styling */
+/*#cta-button {
+    background-color: rgba(247, 190, 5, 0.705);
     text-align: center;
     padding: 0.8rem;
     color: black;
-       
+    text-decoration: none;
     border: none;
     margin-top: 5px;
-    
+    display: inline-block;
     width: 46%;
 }
-#cta-button a{
-    text-decoration: none;
-}
-#cta-button a:hover{
-    background-color: yellow
-}
 
+#cta-button:hover {
+    background-color: #1ea6b7;
+    color: #ffffff;
+}
+*/
 /* Media query for screen from tablet to large screen */
-@media screen and (min-width:768px) {
+/*@media screen and (min-width: 768px) {
     nav {
         display: block;
         position: relative;
         box-shadow: none;
-        width: fit-content;
         padding-right: 1rem;
-        background-color:  #1ea6b7;
+        background-color: #1ea6b7;
         width: 50%;
     }
 
@@ -192,7 +397,7 @@ main {
         align-items: center;
     }
 
-    #menu > li {
+    #menu>li {
         margin: 0 auto;
     }
 
@@ -214,5 +419,38 @@ main {
         font-size: 280%;
         margin: 0 0.5rem;
         line-height: 75px;
-    }
+    }*/
+    /* Main element styling */
+    /*main {
+        flex: 1 0 auto;
+        margin-top: 70px;
+        width: 100%;
+        position: relative;
+        z-index: -1;
 }
+main p:hover{
+    background-color: brown;
+}
+#hero-content {
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    width: 86vw;
+        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+    #hero-content >h1 {
+        border: 1px solid wheat;
+        padding: 2%;
+        font-size: 2rem;
+    }
+    #hero-content h1:hover{
+      background-color: rgb(244, 255, 127);
+      color: #3a3a3a;
+
+    }
+    
+}*/
