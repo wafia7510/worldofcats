@@ -26,7 +26,8 @@ header {
     background-color: #2d7594;
     padding: 0 1rem;
     width: 100%;
-    
+    position: fixed;
+    z-index: 20;
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
@@ -103,6 +104,7 @@ main{
 #hero-section{
     /*adding background image*/
     background: url("../images/koshka-kot-temnyi-ochki-rubashka-zheltyi-fon.jpg") no-repeat center center/cover;
+    
     width: 100%;
     height: 90vh;
     position: relative;
@@ -151,7 +153,7 @@ main{
     top: 280px;
     left: 150px;
 }
-/*inside tag of anchor element styling*/
+/*anchor tag of p in hero section styling*/
 #cta-button{
     text-decoration: none;
     background-color: rgb(255, 187, 0);
@@ -163,12 +165,237 @@ main{
     background-color: yellow;
     color: black;
 }
+/*about us section styling start*/
+#about-us{
+    
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top:0;
+    font-display: flex;
+    flex-direction: column;
+    
+}
+/*heading div for about us section*/
+#intro-heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1rem;
+    justify-content: space-around;
+    gap: 5px;
+}
+/*elements of intro-heading h2 p and hr styling*/
+#intro-heading h2{
+    color:#2d7594;
+    text-align: center;
+    
+    font-size: 2rem;
+    
+
+}
+#intro-heading p{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+#intro-heading hr{
+    border: 2px solid #2d7594;
+}
+/*intro purpose sub-heading styling section*/
+.intro-subheadings{
+    width: 100%;
+    display: flex;
+    
+    
+
+}
+/*styling for two divs *heading1 and heading-img)inside intro-subheading1*/
+#heading1{
+  width: 50%;
+  height: 90vh;
+  display: inline-block;
+  float: left;
+  
+}
+#heading1 h3{
+margin: 0;
+  font-size: 150%;
+  padding: 1rem 2rem;
+}
+#heading1 ul{
+    margin: -30px 10px;
+    list-style-type: none;
+    padding: 1.5rem;
+}
+#heading1 ul li{
+    text-align: justify;
+    line-height: 30px;
+    
+    font-size: 17px;
+    margin-top: 5px;
+        
+}
+#heading1 ul li strong{
+    font-size: 110%;
+}
+#heading1 strong a{
+    text-decoration: none;
+    color: #056b6d;
+}
+#heading1 ul li strong:hover{
+    text-decoration: underline;
+}/*ending of #heading1 styling*/
+/*starting of style of #heading1-img elements*/
+#heading1-img{
+    width: 50%;
+    height: 90vh;
+    padding: 2rem;
+    
+    display: inline-block;
+    float: right;
+    
+}
+#heading1-img>img{
+    width: 45vw;
+    height: 50vh;
+    
+    position: relative;
+    top: 100px; 
+}
+/*styling of heading2 and heading3*/
+#heading2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 15px;
+    
+    padding: 1rem;
+      /*background-color:  #2d7594;*/
+    align-items: center;
+    
+}
+/*borders for heading2*/
+.border-heading2{
+    border-top: 1px solid #2d7594; 
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px gray;
+    
+}
+/*join our community styling*/
+#heading3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 15px;
+    padding: 1rem;
+    align-items: center;
+    margin-top: 70px;
+
+}
+/* text-content styling for heading2*/
+#heading2 .text-content {
+    flex: 1;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;   
+}
+/* text-handling for heading3*/
+#heading3 #text-handling {
+    
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color:#71e0e2d9 ;
+    height: 50vh;
+    position: relative;
+    left: 20px;
+   
+    
+}
+/*h3 element inside text-content styling*/
+#heading2 .text-content h3{
+    text-align: center;
+    font-size: 170%;
+    padding: 0.5rem;
+}
+/*h3 element inside text-handling styling*/
+#text-handling h3{
+    text-align: center;
+    font-size: 170%;
+    padding: 0.5rem;
+    color: #243a3c;
+}
+/*p element inside text-content styling*/
+#heading2 .text-content p{
+    text-align: justify;
+    font-size: 100%;
+    width: 100%;
+    
+    line-height: 30px;
+    
+    padding: 1rem;
+}
+/*p element inside text-handling styling*/
+#text-handling p{
+    text-align: justify;
+    font-size: 100%;
+    width: 100%;
+    padding: 1rem;
+    line-height: 30px;
+    color: #243a3c;
+    font-weight: 500;
+}
+/*img element inside heading2 styling*/
+#heading2 img {
+     width: 40%;
+    height: 300px;
+    margin-top: 10px;
+    
+}
+/*img element inside heading3 styling*/
+#heading3 img {
+    width: 40%;
+   height: 300px;
+   position: relative;
+   left: -30px;
+   
+}
+/* #join-btn element inside heading3 styling*/
+#heading3 #join-btn{
+    font-size: 150%;
+    text-decoration: none;
+    background-color: #0b8b8d;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    width: 30%;
+    margin-left: 0;
+
+
+}
+#heading3 #join-btn:hover{
+    background-color: #ffffff;
+    color: #0b8b8d;
+}
+
 /*Media query for mobile and tablet screens*/
 @media screen and (max-width: 767px){
+    /*header styling for mobile and tablet screens*/
     header {
-        
-        
-        position: fixed;
+    position: fixed;
         z-index: 10;
         display: flex;
         align-items: center;
@@ -202,6 +429,7 @@ main{
         top: 51px;
         left: 0;
         background-color: #ffffff;
+        box-shadow: 0 2px 2px #3a3a3a;
         
     }
     #menu{
@@ -237,6 +465,169 @@ main{
     .nav-toggle-label i {
         color: #ffffff;
     }
+    /*ending of header styling*/
+    /*starting of main element styling*/
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    /*first section hero styling */
+    #hero-section{
+        /*adding background image*/
+        width: 100%;
+        height: 110vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    /*inside tags of hero-section elements h1, h3 and p styling*/
+    #hero-section h1{
+       position: absolute;
+        width: 80%;
+        height: fit-content;
+        padding: 1rem;
+        top: 100px;
+        left: 50px;
+        font-size:1rem;
+        
+    }
+    #hero-section h3{
+        position: absolute;
+        width: 80%;
+        padding: 1rem;
+        height: fit-content;
+        
+        top: 160px;
+        left: 50px;
+        font-size: 1rem;
+       
+    }
+    #hero-section p{
+        
+        position: absolute;
+        width: 80%;
+        padding: 1rem;
+        text-align: center;
+        top: 235px;
+        left: 50px;
+        line-height: 27px;
+    }
+    /*anchor tag of p in hero section styling*/
+    #cta-button{
+        text-decoration: none;
+        background-color: rgb(255, 187, 0);
+        padding: 1rem;
+        display: inline-block;
+        margin-top: 12px;
+    }
+    /*ending of hero secion element styling*/
+    /*styling for two divs *heading1 and heading-img)inside intro-subheading1*/
+    .intro-subheadings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+   #heading1{
+    width: 100%;
+    height: 90vh;
+    clear: left;
+    }
+   #heading1 h3{
+    padding: 0;
+    font-size: 200%;
+    text-align: center;
+    }
+  #heading1 ul{
+      margin: 0 10px;
+      padding: 0.5rem;
+      
+  }
+  /*ending of #heading1 styling*/
+  /*starting of style of #heading1-img elements*/
+  #heading1-img{
+      width: 100%;
+      height: fit-content;
+      clear: right;
+      
+      margin-top: 200px;
+  }
+  #heading1-img>img{
+      width: inherit;
+      height: 50vh;
+      
+      position: relative;
+      top: 0px; 
+  }
+   /*our mission element syling*/
+  #heading2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    gap: 5px;
+    padding: 1rem;
+    align-items: center;
+    
+}
+#heading2 .text-content {
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+#heading2 img {
+    width: 100%;
+   height: 300px;
+   margin-top: 10px;
+   
+}
+/*join our community styling*/
+#heading3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    margin-top: 70px;
+
+}
+#heading3 #text-handling {
+    display: flex;
+    width: 100%;
+    background-color:#71e0e2d9 ;
+    height: fit-content;
+    position: relative;
+    top: 10px;
+    left: 0px;
+}
+#heading3 img {
+    width: 100%;
+   height: 300px;
+   position: relative;
+   left: 0px;
+   top:10px;
+   
+}
+#heading3 #join-btn{
+    font-size: 130%;
+    width: 40%;
+    position: relative;
+    top: -10px;
+    left:0
+
+
+}/* endinf of about section element styling*/
+
+  
     
 
 }
