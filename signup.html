@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Of Cats</title>
+    <!-- Fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Start of Header tag -->
+
+   <header>
+        <a id="logo" href="index.html">
+            <!-- Logo Heading -->
+            <h1 id="logo-heading">World Of Cats</h1>
+        </a>
+
+        <!-- Hidden checkbox for menu toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <nav>
+            <!-- Starting of nav tag for links -->
+            <ul id="menu">
+                <li><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
+                <li><a href="gallery.html" target="_blank" rel="noopener noreferrer">Gallery</a></li>
+                <li><a href="signup.html" target="_blank" rel="noopener noreferrer">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="signup">
+            <form action="https://formdump.codeinstitute.net" id="signup-form" method="post">
+              <h2>Let's get you signed up!</h2>
+              <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" name="first-name" id="first-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" name="last-name" id="last-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email-address">Email Address</label>
+                  <input type="email" name="email-address" id="email-address" required>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Preferences</legend>
+                <div class="form-group radio-button">
+                  <label>Favorite Cat Activity:</label><br>
+                  <label for="playing">Playing</label>
+                  <input type="radio" name="cat-activity" id="playing" value="playing" checked required>
+                  <label for="sleeping">Sleeping</label>
+                  <input type="radio" name="cat-activity" id="sleeping" value="sleeping" required>
+                  <label for="exploring">Exploring</label>
+                  <input type="radio" name="cat-activity" id="exploring" value="exploring" required>
+                </div>
+                <div class="form-group checkbox-group">
+                  <label>Interested Topics:</label><br>
+                  <label for="health">Health</label>
+                  <input type="checkbox" name="topics" id="health" value="health">
+                  <label for="nutrition">Nutrition</label>
+                  <input type="checkbox" name="topics" id="nutrition" value="nutrition">
+                  <label for="behavior">Behavior</label>
+                  <input type="checkbox" name="topics" id="behavior" value="behavior">
+                </div>
+              </fieldset>
+              <div class="form-group">
+                <button type="submit" class="join-button">Join Now!</button>
+              </div>
+            </form>
+           
+          </section>
+    </main>
+    </body>
+    </html>
