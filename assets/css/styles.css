@@ -19,7 +19,9 @@ body {
 h1, h2, h3 {
     font-family: "Noto Serif", serif;
 }
-
+img{
+    object-fit: cover;
+}
 /* Header */
 header {
     
@@ -98,13 +100,11 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
 }
 /*first section hero styling */
 #hero-section{
     /*adding background image*/
-    background: url("../images/koshka-kot-temnyi-ochki-rubashka-zheltyi-fon.jpg") no-repeat center center/cover;
-    
+    background: url("../images/koshka-cat.jpg") no-repeat center center/cover;
     width: 100%;
     height: 90vh;
     position: relative;
@@ -708,7 +708,7 @@ margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background:url("/assets/images/cat-beautiful-digital-art-animal-4k-wallpaper-uhdpaper.com-778@0@i.jpg") no-repeat 75%/cover;
+        background:url("../images/galaxy-cat.jpg") no-repeat 75%/cover;
 
      }
      #signup-form {
