@@ -112,6 +112,62 @@ header nav {
 .nav-toggle-label i {
     color: #ffffff;
 }
+/*main element styling*/
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*first section hero styling */
+#hero-section {
+    /*adding background image*/
+    background: url("../images/koshka-cat.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+
+}
+
+/*inside tags of hero-section elements h1, h3 and p styling*/
+#hero-section h1,
+#hero-section h3,
+#hero-section p {
+  background-color: #ffffffd9;
+  color:  #2d7594;
+  width: 84%;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 1px solid yellow;
+  font-size: 4vw;
+  max-width: 800px;
+}
+
+#hero-section h1 {
+    font-size: 6vw;
+  }
+ 
+/*anchor tag of p in hero section styling*/
+#cta-button {
+    text-decoration: none;
+    background-color: rgb(255, 187, 0);
+    padding: 1rem;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.2s linear;
+}
+
+#cta-button:hover {
+    background-color: yellow;
+    color: black;
+}
+
 @media screen and (min-width: 400px) and (max-width:767px) {
     /* Styles for screens less than 768px */
     
@@ -184,24 +240,24 @@ header nav {
         color:#2d7594;
     }
      #hero-section {
-        height: 80vh;
+        height: 80vh !important;
       }
     
       #hero-section h1 {
         position: absolute;
-        top: 183px;
+        top: 148px;
         font-size: 4vw !important;
       }
     
       #hero-section h3 {
         position: absolute;
-        top:278px;
+        top:238px;
         font-size: 2.5vw !important;
       }
     
       #hero-section p {
         position: absolute;
-        top:383px;
+        top:338px;
         font-size: 2vw !important;
        
         font-weight: bold;
@@ -211,24 +267,24 @@ header nav {
 }
 @media screen and (min-width: 992px) {
     #hero-section {
-      height: 70vh;
+      height: 70vh !important;
     }
   
     #hero-section h1 {
         position: absolute;
-        top:216px;
+        top:126px;
         font-size: 3vw !important;
     }
   
     #hero-section h3 {
         position: absolute;
-        top:309px;
+        top:212px;
       font-size: 2vw !important;
     }
   
     #hero-section p {
         position: absolute;
-        top:390px;
+        top:283px;
       font-size: 1.5vw !important;
       font-weight: bold;
         line-height: 30px;
@@ -239,102 +295,78 @@ header nav {
   @media screen and (min-width: 1200px) {
     #hero-section {
       vertical-align:middle;
-      height: 80vh;
+      height: 90vh !important;
     }
   
     #hero-section>h1 {
       position: absolute;
-      top:183px;
+      top:141px;
       font-size: 2.5vw !important;
     
     }
   
     #hero-section h3 {
         position: absolute;
-        top:279px;
+        top:240px;
         font-size: 1.5vw !important;
     }
   
     #hero-section p {
         position: absolute;
-        top:359px;
+        top:318px;
         font-size: 1.2vw !important;
         font-weight: bold;
         line-height: 30px;
         word-spacing: 2px;
     }
-  }
- /* Ensure content doesn't overflow on mobile */
+    /*intro purpose sub-heading styling section*/
+div.intro-subheadings {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+}
+
+/*styling for two divs *heading1 and heading-img)inside intro-subheading1*/
+#heading1 {
+    width: 50%;
+    padding: 0.5rem 0;
+    
+}
+
+div#heading1 h3 {
+text-align: left;
+}
+
+div#heading1 ul {
+    margin-top: -30px;
+    list-style-type: none;
+    padding: 1.5rem;
+    
+}
+
+
+
+
+
+
+
+
+/*ending of #heading1 styling*/
+/*starting of style of #heading1-img elements*/
+#heading1-img {
+    width: 50%;
+    padding: 1rem;
+ 
+}
+
+}
+ /* to ensure content doesn't overflow on mobile */
  body, html {
     overflow-x: hidden;
 }
 
-/* Add some padding to the body to account for fixed header */
-
-  /* add media query for screen from tablet to large screen*/
-@media screen and (min-width:768px){}
-@media screen and (min-width:992px){}
-@media screen and (min-width:1200px){}
-
-  
-  
-
-
-/*main element styling*/
-main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-/*first section hero styling */
-#hero-section {
-    /*adding background image*/
-    background: url("../images/koshka-cat.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-   
-
-}
-
-/*inside tags of hero-section elements h1, h3 and p styling*/
-#hero-section h1,
-#hero-section h3,
-#hero-section p {
-  background-color: #ffffffd9;
-  color:  #2d7594;
-  width: 84%;
-  padding: 1rem;
-  margin: 0 auto;
-  border: 1px solid yellow;
-  font-size: 4vw;
-  max-width: 800px;
-}
-
-#hero-section h1 {
-    font-size: 6vw;
-  }
- 
-/*anchor tag of p in hero section styling*/
-#cta-button {
-    text-decoration: none;
-    background-color: rgb(255, 187, 0);
-    padding: 1rem;
-    display: inline-block;
-    margin-top: 10px;
-    transition: background-color 0.2s linear;
-}
-
-#cta-button:hover {
-    background-color: yellow;
-    color: black;
-}
 
 /*about us section styling start*/
 #about-us {
@@ -345,7 +377,6 @@ main {
     top: 0;
     font-display: flex;
     flex-direction: column;
-
 }
 
 /*heading div for about us section*/
@@ -353,7 +384,6 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-
     padding: 1rem;
     justify-content: space-around;
     gap: 5px;
@@ -384,39 +414,36 @@ main {
 .intro-subheadings {
     width: 100%;
     display: flex;
-
-
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 /*styling for two divs *heading1 and heading-img)inside intro-subheading1*/
 #heading1 {
-    width: 50%;
-    height: 90vh;
-    display: inline-block;
-    float: left;
-
+    width: 100%;
+    padding: 0.5rem 0;
+    
 }
 
 #heading1 h3 {
-    margin: 0;
+    
     font-size: 150%;
     padding: 1rem 2rem;
+    text-align: center;
 }
 
 #heading1 ul {
-    margin: -30px 10px;
+    margin: 10px;
     list-style-type: none;
     padding: 1.5rem;
+    
 }
 
 #heading1 ul li {
     text-align: justify;
     line-height: 30px;
-
     font-size: 17px;
     margin-top: 5px;
-
 }
 
 #heading1 ul li strong {
@@ -435,21 +462,15 @@ main {
 /*ending of #heading1 styling*/
 /*starting of style of #heading1-img elements*/
 #heading1-img {
-    width: 50%;
-    height: 90vh;
-    padding: 2rem;
-
-    display: inline-block;
-    float: right;
-
+    width: 100%;
+    padding: 1rem;
+ 
 }
 
 #heading1-img>img {
-    width: 45vw;
-    height: 50vh;
+    max-width: 100%;
+    height: auto;
 
-    position: relative;
-    top: 100px;
 }
 
 /*styling of heading2 and heading3*/
@@ -1179,21 +1200,9 @@ legend {
   }
   /*ending of #heading1 styling*/
 /*starting of style of #heading1-img elements*/
-#heading1-img {
-    width: 100%;
-    height: fit-content;
-    clear: right;
 
-    margin-top: 200px;
-}
 
-#heading1-img>img {
-    width: inherit;
-    height: 50vh;
 
-    position: relative;
-    top: 0px;
-}
 
 /*our mission element syling*/
 #heading2 {
