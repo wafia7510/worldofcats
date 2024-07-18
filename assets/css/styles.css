@@ -167,6 +167,243 @@ main {
     background-color: yellow;
     color: black;
 }
+/* to ensure content doesn't overflow on mobile */
+body, html {
+    overflow-x: hidden;
+}
+
+
+/*about us section styling start*/
+#about-us {
+
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 0;
+    font-display: flex;
+    flex-direction: column;
+}
+
+/*heading div for about us section*/
+#intro-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+/*elements of intro-heading h2 p and hr styling*/
+#intro-heading h2 {
+    color: #2d7594;
+    text-align: center;
+
+    font-size: 2rem;
+
+
+}
+
+#intro-heading p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+
+#intro-heading hr {
+    border: 2px solid #2d7594;
+}
+
+/*intro purpose sub-heading styling section*/
+.intro-subheadings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+/*styling for two divs *heading1 and heading-img)inside intro-subheading1*/
+#heading1 {
+    width: 100%;
+    padding: 0.5rem 0;
+    
+}
+
+#heading1 h3 {
+    
+    font-size: 150%;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+#heading1 ul {
+    margin: 10px;
+    list-style-type: none;
+    padding: 1.5rem;
+    
+}
+
+#heading1 ul li {
+    text-align: justify;
+    line-height: 30px;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+#heading1 ul li strong {
+    font-size: 110%;
+}
+
+#heading1 strong a {
+    text-decoration: none;
+    color: #056b6d;
+}
+
+#heading1 ul li strong:hover {
+    text-decoration: underline;
+}
+
+/*ending of #heading1 styling*/
+/*starting of style of #heading1-img elements*/
+#heading1-img {
+    width: 100%;
+    padding: 1rem;
+}
+
+#heading1-img>img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+/*styling of heading2 and heading3*/
+#heading2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+ }
+
+/*borders for heading2*/
+.border-heading2 {
+    margin: 0 1rem;
+    
+
+}
+/* text-content styling for heading2*/
+#heading2 .text-content {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+/*h3 element inside text-content styling*/
+#heading2 .text-content h3 {
+    text-align: center;
+    font-size: 170%;
+    padding: 0.5rem;
+    
+}
+/*p element inside text-content styling*/
+#heading2 .text-content p {
+    
+    text-align: justify;
+    font-size: 100%;
+    line-height: 30px;
+    padding: 1rem;
+    
+}
+/*img element inside heading2 styling*/
+#heading2 img {
+    height: auto;
+    margin-top: 10px;
+    box-shadow: 3px 2px 2px gray;
+}
+
+/*join our community styling*/
+#heading3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid black;
+    row-gap: 30px;
+    
+
+}
+/* text-handling for heading3*/
+#heading3 #text-handling {
+
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF8E1;
+ 
+}
+
+/*h3 element inside text-handling styling*/
+#text-handling h3 {
+    text-align: center;
+    font-size: 170%;
+    padding: 0.5rem;
+    color: #243a3c;
+}
+
+/*p element inside text-handling styling*/
+#text-handling p {
+    text-align: justify;
+    font-size: 100%;
+    padding: 1rem;
+    line-height: 30px;
+    color: #243a3c;
+    font-weight: 500;
+}
+
+
+
+/*img element inside heading3 styling*/
+#heading3 img {
+    
+    height: auto;
+}
+
+/* #join-btn element inside heading3 styling*/
+#heading3 #join-btn {
+    font-size: 150%;
+    text-decoration: none;
+    background-color: #0b8b8d;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    width: 35%;
+    display: block;
+    margin-left: 0;
+
+
+}
+
+#heading3 #join-btn:hover {
+    background-color: #ffffff;
+    color: #0b8b8d;
+}
+
+
 
 @media screen and (min-width: 400px) and (max-width:767px) {
     /* Styles for screens less than 768px */
@@ -264,6 +501,14 @@ main {
         line-height: 30px;
         word-spacing: 2px;
       }
+      div.cat-profile img {
+        width: 30%;
+        height: 24vh;
+    
+        border-radius: 50%;
+        
+    }
+      
 }
 @media screen and (min-width: 992px) {
     #hero-section {
@@ -289,6 +534,13 @@ main {
       font-weight: bold;
         line-height: 30px;
         word-spacing: 2px;
+    }
+    div.cat-profile img {
+        width: 19%;
+        height: 24vh;
+    
+        border-radius: 50%;
+        
     }
   }
   
@@ -333,6 +585,7 @@ div.intro-subheadings {
     width: 50%;
     padding: 0.5rem 0;
     
+    
 }
 
 div#heading1 h3 {
@@ -346,250 +599,69 @@ div#heading1 ul {
     
 }
 
-
-
-
-
-
-
-
 /*ending of #heading1 styling*/
 /*starting of style of #heading1-img elements*/
 #heading1-img {
     width: 50%;
     padding: 1rem;
- 
 }
 
-}
- /* to ensure content doesn't overflow on mobile */
- body, html {
-    overflow-x: hidden;
-}
-
-
-/*about us section styling start*/
-#about-us {
-
+div#heading2 {
     width: 100%;
-    height: fit-content;
-    position: relative;
-    top: 0;
-    font-display: flex;
-    flex-direction: column;
-}
-
-/*heading div for about us section*/
-#intro-heading {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    border-top: 4px solid #2d7594;
     padding: 1rem;
-    justify-content: space-around;
-    gap: 5px;
-}
-
-/*elements of intro-heading h2 p and hr styling*/
-#intro-heading h2 {
-    color: #2d7594;
-    text-align: center;
-
-    font-size: 2rem;
-
-
-}
-
-#intro-heading p {
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.5rem;
-    line-height: 40px;
-}
-
-#intro-heading hr {
-    border: 2px solid #2d7594;
-}
-
-/*intro purpose sub-heading styling section*/
-.intro-subheadings {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-/*styling for two divs *heading1 and heading-img)inside intro-subheading1*/
-#heading1 {
-    width: 100%;
-    padding: 0.5rem 0;
-    
-}
-
-#heading1 h3 {
-    
-    font-size: 150%;
-    padding: 1rem 2rem;
-    text-align: center;
-}
-
-#heading1 ul {
-    margin: 10px;
-    list-style-type: none;
-    padding: 1.5rem;
-    
-}
-
-#heading1 ul li {
-    text-align: justify;
-    line-height: 30px;
-    font-size: 17px;
-    margin-top: 5px;
-}
-
-#heading1 ul li strong {
-    font-size: 110%;
-}
-
-#heading1 strong a {
-    text-decoration: none;
-    color: #056b6d;
-}
-
-#heading1 ul li strong:hover {
-    text-decoration: underline;
-}
-
-/*ending of #heading1 styling*/
-/*starting of style of #heading1-img elements*/
-#heading1-img {
-    width: 100%;
-    padding: 1rem;
- 
-}
-
-#heading1-img>img {
-    max-width: 100%;
-    height: auto;
-
-}
-
-/*styling of heading2 and heading3*/
-#heading2 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 15px;
-
-    padding: 1rem;
-    /*background-color:  #2d7594;*/
-    align-items: center;
-
-}
-
-/*borders for heading2*/
-.border-heading2 {
-    border-top: 1px solid #2d7594;
-    border-radius: 20px;
-    box-shadow: 3px 2px 2px gray;
-
-}
-
-/*join our community styling*/
-#heading3 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 15px;
-    padding: 1rem;
-    align-items: center;
-    margin-top: 70px;
-
-}
+  
+ }
 
 /* text-content styling for heading2*/
-#heading2 .text-content {
-    flex: 1;
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+div.text-content {
+    
+    max-width:50% ;
+    margin: 20px 0 0 50px;
+    float: left;
+    border: 1px solid black;
+    align-items:center;
+    row-gap: 0;
+    box-shadow: 0 2px 2px #3a3a3a;
+
+    
 }
-
-/* text-handling for heading3*/
-#heading3 #text-handling {
-
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #71e0e2d9;
-    height: 50vh;
-    position: relative;
-    left: 20px;
-
-
-}
-
-/*h3 element inside text-content styling*/
-#heading2 .text-content h3 {
-    text-align: center;
-    font-size: 170%;
-    padding: 0.5rem;
-}
-
-/*h3 element inside text-handling styling*/
-#text-handling h3 {
-    text-align: center;
-    font-size: 170%;
-    padding: 0.5rem;
-    color: #243a3c;
-}
-
-/*p element inside text-content styling*/
 #heading2 .text-content p {
-    text-align: justify;
-    font-size: 100%;
-    width: 100%;
-
-    line-height: 30px;
-
-    padding: 1rem;
+   width: 90%;
+    
 }
 
-/*p element inside text-handling styling*/
-#text-handling p {
-    text-align: justify;
-    font-size: 100%;
-    width: 100%;
-    padding: 1rem;
-    line-height: 30px;
-    color: #243a3c;
-    font-weight: 500;
-}
+
 
 /*img element inside heading2 styling*/
-#heading2 img {
+div#heading2 img {
     width: 40%;
-    height: 300px;
-    margin-top: 10px;
+    height: 40vh;
+    margin: 30px 0 0 50px;
+    float: left;
+    
+}
+/*join our community styling*/
+div#heading3{
+    display: block;
+    gap: 10px;
+}
+/* text-handling for heading3*/
+#heading3 div#text-handling {
+    margin-left: 40px;
+    width: 50%;
+    float: left;
 
 }
 
 /*img element inside heading3 styling*/
-#heading3 img {
+div#heading3 img {
     width: 40%;
-    height: 300px;
-    position: relative;
-    left: -30px;
-
+    height: 50vh;
+    float: right;
+    margin-right: 40px;
+    
 }
 
 /* #join-btn element inside heading3 styling*/
@@ -600,33 +672,78 @@ div#heading1 ul {
     color: #ffffff;
     padding: 1rem;
     text-align: center;
-    width: 30%;
+    width: 35%;
+    display: block;
     margin-left: 0;
-
-
 }
 
 #heading3 #join-btn:hover {
     background-color: #ffffff;
     color: #0b8b8d;
 }
+section#cat-profiles {
+        
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    row-gap: 10px;
+    
+    
+    
+   
+    
+    
 
+}
+div.cat-profile {
+    background-color: rgba(255, 255, 255, 0.938);
+    /* Semi-transparent background for readability */
+    width: 49%;
+    height: 50vh;
+    
+}
+div.cat-profile img {
+    width: 30%;
+    height: 24vh;
+
+    border-radius: 50%;
+    
+}
+a#profiles-btn {
+    
+    
+    margin-top: 230px;
+    margin-right: 4px;
+    
+    
+}
+}
+ 
 /*styling of cat profile section*/
 #cat-profiles {
     width: 100%;
-    height: fit-content;
+    height: auto;
     position: relative;
     top: 0;
-    font-display: flex;
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+    align-items: center;
+    align-content: center;
     background-color: rgba(231, 160, 46, 0.849);
     padding: 1rem;
+    
 
 }
 
 #cat-profiles h2 {
     padding: 1rem;
-    background-color: #1c98be;
+    background-color: #3a89a1;
     width: 100%;
     font-size: 180%;
     color: aliceblue
@@ -635,8 +752,13 @@ div#heading1 ul {
 .cat-profile {
     background-color: rgba(255, 255, 255, 0.938);
     /* Semi-transparent background for readability */
-    padding: 20px;
-    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-around;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -644,27 +766,26 @@ div#heading1 ul {
 }
 
 .cat-profile img {
-    width: 200px;
-    height: 200px;
+    width: 56%;
+    height: 24vh;
 
     border-radius: 50%;
-    float: left;
-    margin-right: 30px;
-    margin-left: 20px;
+    
+    
 }
 
 .cat-profile h3 {
-    margin: 30px 0 5px;
+   
     font-size: 140%;
 
 
 }
 
 .cat-profile p {
-    margin: 15px;
-    font-size: 110%;
+    text-align: justify;
+    font-size: 100%;
     line-height: 30px;
-    word-spacing: 5px;
+    
 }
 
 .cat-profile::after {
@@ -679,9 +800,12 @@ div#heading1 ul {
     color: aliceblue;
     text-align: center;
     padding: 1rem;
-    position: relative;
-    top: 10px;
-    left: 800px;
+    
+    
+}
+#profiles-btn:hover{
+    background-color: #f8e518;
+    color: black;
 }
 
 /*fun fact styling*/
@@ -1201,74 +1325,6 @@ legend {
   /*ending of #heading1 styling*/
 /*starting of style of #heading1-img elements*/
 
-
-
-
-/*our mission element syling*/
-#heading2 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    gap: 5px;
-    padding: 1rem;
-    align-items: center;
-
-}
-
-#heading2 .text-content {
-    flex: 1;
-    display: flex;
-    width: 100%;
-}
-
-#heading2 img {
-    width: 100%;
-    height: 300px;
-    margin-top: 10px;
-
-}
-
-/*join our community styling*/
-#heading3 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid black;
-    margin-top: 70px;
-
-}
-
-#heading3 #text-handling {
-    display: flex;
-    width: 100%;
-    background-color: #71e0e2d9;
-    height: fit-content;
-    position: relative;
-    top: 10px;
-    left: 0px;
-}
-
-#heading3 img {
-    width: 100%;
-    height: 300px;
-    position: relative;
-    left: 0px;
-    top: 10px;
-
-}
-
-#heading3 #join-btn {
-    font-size: 130%;
-    width: 40%;
-    position: relative;
-    top: -10px;
-    left: 0
-}
 
 /* endinf of about section element styling*/
 
