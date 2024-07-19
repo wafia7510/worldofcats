@@ -448,7 +448,15 @@ div.cat-profile img {
     
     
 }
-
+div.gallerypage-item {
+    margin: 10px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    height: 64vh
+}
 
   }
 @media screen and (min-width: 768px) {
@@ -535,7 +543,15 @@ div.cat-profile ul {
     
 }
 
-
+div.gallerypage-item {
+    margin: 10px;
+    width: 29%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    height: 60vh
+}
       
 }
 @media screen and (min-width: 992px) {
@@ -633,6 +649,15 @@ div.cat-tip>.tip-content {
 
 div.gallery-item {
     flex: 1 1 calc(25% - 10px); /* Four items per row */
+}
+div.gallerypage-item {
+    margin: 10px;
+    width: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    height: 61vh
 }
 }
   
@@ -836,7 +861,7 @@ div.cat-profile ul {
     row-gap: 10px;
     align-items: center;
     align-content: center;
-    background-color: rgba(231, 160, 46, 0.849);
+    background: url("../images/cat-paws.jpg") no-repeat center center/cover;
     padding: 1rem;
     
 
@@ -902,16 +927,16 @@ div.cat-profile ul {
 
 #profiles-btn {
     text-decoration: none;
-    background-color: #0b8b8d;
-    color: aliceblue;
+    background-color:gold;
+    color: black;
     text-align: center;
     padding: 1rem;
     
     
 }
 #profiles-btn:hover{
-    background-color: #f8e518;
-    color: black;
+    background-color:orange;
+    
 }
 
 /*fun fact styling*/
@@ -1122,8 +1147,8 @@ div.footer-container>h4 {
 #gallerypage-container {
     width: 100%;
     height: auto;
-    padding: 20px;
-    margin-top: 80px;
+    padding: 3rem;
+    margin-top:80px;
     background-color: #f3f6f8;
     display: flex;
     flex-wrap: wrap;
@@ -1136,26 +1161,33 @@ div.footer-container>h4 {
 /* Styles for individual gallery items */
 .gallerypage-item {
     margin: 10px;
-    width: 20%;
-    /* Four images per row with margin */
+    width: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     background-color: white;
-    height: 50vh
+    height: 62vh
+}
+.gallerypage-item:hover {
+    border: 1px solid #35addc;
 }
 
 .gallerypage-item img {
     width: 100%;
-    height: 80%;
+    height: 50vh;
 }
 
+
 .gallerypage-item .caption {
-    height: 80px;
-    padding: 10px;
+    margin: -1rem;
+    height: 13vh;
+    padding: 1.5rem;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #fff;
+    
 }
 
 /*signup page*/
@@ -1166,7 +1198,7 @@ div.footer-container>h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url("../images/catty-wally.jpg") no-repeat center center/cover;
+    background: url("../images/cat-in-water.jpg") no-repeat 75%/cover;
     padding: 1rem;
    
 
