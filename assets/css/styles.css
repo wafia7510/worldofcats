@@ -901,7 +901,7 @@ form#signup-form {
 }
 
 .cat-profile {
-    background-color: rgba(255, 255, 255, 0.938);
+    background-color: rgba(253, 253, 253, 0.94);
     /* Semi-transparent background for readability */
     width: 100%;
     display: flex;
@@ -912,7 +912,7 @@ form#signup-form {
     justify-content: space-around;
     row-gap: 6px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     /* to ensure  content is contained within the profile */
 }
@@ -931,7 +931,6 @@ form#signup-form {
 
 .cat-profile ul {
     list-style-type: disc;
-    
     width: 100%;
     padding-left: 1.2rem;
     
@@ -1193,6 +1192,7 @@ div.footer-container>h4 {
 }
 .gallerypage-item:hover {
     border: 1px solid #35addc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .gallerypage-item img {
@@ -1203,11 +1203,12 @@ div.footer-container>h4 {
 
 .gallerypage-item .caption {
     margin: -1rem;
-    height: 13vh;
-    padding: 1.5rem;
+    height: 14vh;
+    padding: 1rem;
     text-align: center;
     font-size: 1rem;
     background-color: #fff;
+    
     
 }
 
