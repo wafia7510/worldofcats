@@ -8,6 +8,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*general styling for html and body*/
+html,body{
+    height: 100%;
+}
 
 body {
     min-height: 100vh;
@@ -15,6 +19,11 @@ body {
     flex-direction: column;
     /*generic font style*/
     font-family: "Lora", serif;
+}
+/*to stick footer*/
+body>footer{
+    position:sticky;
+    top: 100vh;
 }
 
 h1,
@@ -109,6 +118,7 @@ header nav {
     color: #2d7594;
 }
 
+
 .nav-toggle:checked+.nav-toggle-label+nav {
     display: block;
 }
@@ -122,6 +132,12 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
 }
+#main-404{
+    margin-top: 6rem;
+    padding: 1rem 0 0 2rem;
+    
+}
+
 
 /*first section hero styling */
 #hero-section {
@@ -137,8 +153,7 @@ main {
     justify-content: center;
     text-align: center;
     padding: 6rem 0 1rem 0;
-   
-
+ 
 }
 
 /*inside tags of hero-section elements h1, h3 and p styling*/
@@ -271,8 +286,7 @@ body, html {
     text-decoration: underline;
 }
 
-/*ending of #heading1 styling*/
-/*starting of style of #heading1-img elements*/
+/* #heading1-img elements*/
 #heading1-img {
     width: 100%;
     padding: 1rem;
@@ -294,6 +308,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    border-top: 4px solid #2d7594;
     
  }
 
@@ -321,7 +336,7 @@ body, html {
     padding: 0.5rem;
     
 }
-/*p element inside text-content styling*/
+/*p element text-content styling*/
 #heading2 .text-content p {
     
     text-align: justify;
@@ -330,7 +345,7 @@ body, html {
     padding: 1rem;
     
 }
-/*img element inside heading2 styling*/
+/*img element  heading2 styling*/
 #heading2 img {
     height: auto;
     margin-top: 10px;
@@ -350,7 +365,7 @@ body, html {
     
 
 }
-/* text-handling for heading3*/
+/* text-handling for clowder*/
 #heading3 #text-handling {
 
     display: flex;
@@ -410,9 +425,17 @@ body, html {
 }
 
 
+@media screen and (min-width:375px){
 
+    div.cat-profile img {
+    
+        height: 17vh;
+        width: 30%;
+        border-radius: 50%;
+     
+    }
+}
 @media screen and (min-width:536px){
-    /* Styles for screens less than 768px */
     
     /*gallery preview styling*/
 
@@ -425,6 +448,7 @@ body, html {
     div.gallery-item {
         flex: 1 1 calc(50% - 10px); /* Two items per row */
     }
+    /*hero section styling for small screens*/
     
 #hero-section>p {
     font-size: 2vw; /* Adjust font size for larger screens */
@@ -499,7 +523,7 @@ div.gallerypage-item {
 
     header #logo-heading {
     font-size: 220%;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 #hero-section>h1,
 #hero-section>h3,
@@ -518,14 +542,11 @@ div.gallerypage-item {
     font-size: 2vw; /* Adjust font size for larger screens */
 }
 
-    
+/*gallery item styling*/
 div.gallery-item {
         flex: 1 1 calc(33.33% - 10px); /* Three items per row */
     }
-/*media query styling for cat profile*/
-
-
-
+/*media query for cat profile*/
 
 div.cat-profile img {
     
@@ -538,11 +559,9 @@ div.cat-profile img {
 div.cat-profile ul {
     
     padding-left: 16rem;
-    
-    
-    
+   
 }
-
+/*gallery page for tablet screens*/
 div.gallerypage-item {
     margin: 10px;
     width: 29%;
@@ -552,6 +571,7 @@ div.gallerypage-item {
     background-color: white;
     height: 60vh
 }
+/*signup styling for tablet screens*/
 form#signup-form {
     
     max-width: 459px;
@@ -601,7 +621,7 @@ form#signup-form {
         
     }
     /* cat tips*/
-/* Base styles for the section */
+
 section#cat-tips {
     width: 100%;
     padding: 1rem;
@@ -686,7 +706,7 @@ div.gallerypage-item {
         font-size: 1.5vw; /* Further adjust font size for very large screens */
     }
     /*intro purpose sub-heading styling section*/
-div.intro-subheadings {
+     div.intro-subheadings {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -695,11 +715,9 @@ div.intro-subheadings {
 }
 
 /*styling for two divs *heading1 and heading-img)inside intro-subheading1*/
-#heading1 {
+div#heading1 {
     width: 50%;
     padding: 0.5rem 0;
-    
-    
 }
 
 div#heading1 h3 {
@@ -712,15 +730,13 @@ div#heading1 ul {
     padding: 1.5rem;
     
 }
-
-/*ending of #heading1 styling*/
-/*starting of style of #heading1-img elements*/
+/*style of #heading1-img elements*/
 #heading1-img {
     width: 50%;
     padding: 1rem;
 }
-
-div#heading2 {
+/*purpose element styling*/
+div#heading2{
     width: 100%;
     display: block;
     border-top: 4px solid #2d7594;
@@ -730,9 +746,8 @@ div#heading2 {
 
 /* text-content styling for heading2*/
 div.text-content {
-    
-    max-width:50% ;
-    margin: 20px 0 0 50px;
+   max-width:50%;
+    margin: 1.5rem 0 0 3.5rem;
     float: left;
     border: 1px solid black;
     align-items:center;
@@ -746,13 +761,11 @@ div.text-content {
     
 }
 
-
-
 /*img element inside heading2 styling*/
 div#heading2 img {
     width: 40%;
     height: 40vh;
-    margin: 30px 0 0 50px;
+    margin: 1.5rem 0 0 0.5rem;
     float: left;
     
 }
@@ -763,9 +776,10 @@ div#heading3{
 }
 /* text-handling for heading3*/
 #heading3 div#text-handling {
-    margin-left: 40px;
+    margin:1rem 0 0 2rem;
     width: 50%;
     float: left;
+
 
 }
 
@@ -795,6 +809,7 @@ div#heading3 img {
     background-color: #ffffff;
     color: #0b8b8d;
 }
+/*profile styling for large screens*/
 section#cat-profiles {
         
     height: fit-content;
@@ -845,11 +860,9 @@ div.cat-profile ul {
     position: relative; 
     top:-6rem;
     left: 13rem;
-    
-    
-    
+  
 }
-
+/*sign up form styling for large screens*/
 form#signup-form {
     
     max-width: 400px;
@@ -858,7 +871,7 @@ form#signup-form {
 
 }
  
-/*styling of cat profile section*/
+/*Base styling of cat profile section*/
 #cat-profiles {
     width: 100%;
     height: auto;
@@ -872,6 +885,7 @@ form#signup-form {
     align-items: center;
     align-content: center;
     background: url("../images/cat-paws.jpg") no-repeat center center/cover;
+    background-color: #35addc;
     padding: 1rem;
     
 
@@ -904,13 +918,10 @@ form#signup-form {
 }
 
 .cat-profile img {
-    
     height: 22vh;
     width: 49%;
-
     border-radius: 50%;
-    
-    
+
 }
 
 .cat-profile h3 {
@@ -1097,7 +1108,7 @@ div.cat-tip {
 }
 
 /*footer styling*/
-/* Base Styles (Mobile First) */
+/*(Mobile First) */
 footer {
     background-color: #2d7594;
     color: #fff;
@@ -1153,7 +1164,7 @@ div.footer-container>h4 {
 }
 
 
-/*gallery page styling*/
+/*Gallery page styling*/
 #gallerypage-container {
     width: 100%;
     height: auto;
@@ -1291,10 +1302,12 @@ legend {
 .form-group button:hover {
     background-color: #218838;
 }
+/*confirmation page styling*/
 main #msg{
     margin-top: 10rem;
     width: 100%;
-    height: 55.2vh;
+    height: 40vh;
+    padding: 3rem;
 }
 
 
