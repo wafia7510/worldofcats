@@ -5,6 +5,41 @@
 
 
 
+Feature-by-Feature Testing:
+
+Go through each feature of your portfolio site and detail the testing process for each.
+
+Explain the functionality and demonstrate how it aligns with the intended purpose. This could include:
+
+- Navigation:Ensures smooth transitions between pages and links directing to the correct destinations.Testing process includes checking from home to gallery, gallery to sign up and vice versa, checking to drop-down menu and lastly checking the bookmark links.All navigation links work as intended, providing a seamless user experience.
+- Responsive Design: Checking for compatibility across various devices and screen sizes and verified That site maintains a consistent and functional layout across all tested devices, ensuring accessibility for all users.
+- Portfolio Display: Ensured each cat-related project is displayed with the correct title, image, and description,checked that images are high-resolution and load correctly and lastly verified that clicking on project images or titles direct users to the detailed project page or external links to social media websites.
+- Contact Form: Form Submission: Filled out and submitted the contact form with test data and verified that users receive a confirmation message upon submission.
+
+User Experience Testing:
+
+- Usability Testing: Conducted internal usability testing where I and my mentor interacted with the site.Found that the navigation was intuitive and smooth,Verified that the content was engaging and well-organized and Feedback from internal testing was positive and confirming that the site is user-friendly.
+- Accessibility Testing: Verified that all images have descriptive alt text and ensured that the site can be navigated using keyboard shortcuts.
+
+Compatibility Testing:
+
+- Browser Compatibility:Tested the site on different browsers (Chrome, Firefox, Opera).
+- Device Compatibility: Ensuring functionality across various devices (desktops, laptops, tablets, and mobile phones).
+
+
+Regression Testing:
+
+After implementing fixes or updates, ensure that previous features and functionalities still work as intended and No new issues were introduced, confirming that the site remains stable and functional after updates.
+
+Documentation and Logs:
+
+Maintain records of testing procedures, results, and any bugs encountered along with their resolutions. This helps demonstrate a systematic approach to testing and problem-solving.
+
+User Feedback Incorporation:
+
+Incorporated feedback from internal testing conducted by myself and my mentor and  ensuring it meets user needs effectively.
+
+
 ## Code Validation
 
 ### HTML
@@ -13,11 +48,11 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-|  | 404.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-|  | confirmation.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-|  | gallery.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-|  | index.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-|  | signup.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+|  | 404.html | ![screenshot](documentation/404-validator.png) | |
+|  | confirmation.html | ![screenshot](documentation/confirm-vallidator.png) | |
+|  | gallery.html | ![screenshot](documentation/gallery-validator.png) | |
+|  | index.html | ![screenshot](documentation/index-validator.png) | |
+|  | signup.html | ![screenshot](documentation/signup-validator.png) | |
 
 ### CSS
 
@@ -25,32 +60,13 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| assets | styles.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| assets | styles.css | ![screenshot](documentation/css-validator.png) | |
 
 ## Browser Compatibility
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
-Use this space to discuss testing the live/deployed site on various browsers.
 
-Consider testing AT LEAST 3 different browsers, if available on your system.
 
-You DO NOT need to use all of the browsers below, just pick any 3 (minimum).
-
-Recommended browsers to consider:
-- [Chrome](https://www.google.com/chrome)
-- [Firefox](https://www.mozilla.org/firefox/developer)
-- [Opera](https://www.opera.com/download)
-
-**IMPORTANT**: You must provide screenshots of the tested browsers, to "prove" that you've actually tested them.
-
-Please note, there are services out there that can test multiple browser compatibilities at the same time.
-Some of these are paid services, but some are free.
-If you use these, you must provide a link to the source used for attribution, and multiple screenshots of the results.
-
-Sample browser testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
@@ -58,9 +74,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | --- | --- | --- | --- | --- | --- |
 | Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | Works as expected |
 | Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | Works as expected |
-| Edge | ![screenshot](documentation/browsers/browser-edge-home.png) | ![screenshot](documentation/browsers/browser-edge-about.png) | ![screenshot](documentation/browsers/browser-chrome-edge.png) | ![screenshot](documentation/browsers/browser-edge-etc.png) | Works as expected |
-| Safari | ![screenshot](documentation/browsers/browser-safari-home.png) | ![screenshot](documentation/browsers/browser-safari-about.png) | ![screenshot](documentation/browsers/browser-safari-contact.png) | ![screenshot](documentation/browsers/browser-safari-etc.png) | Minor CSS differences |
-| Brave | ![screenshot](documentation/browsers/browser-brave-home.png) | ![screenshot](documentation/browsers/browser-brave-about.png) | ![screenshot](documentation/browsers/browser-brave-contact.png) | ![screenshot](documentation/browsers/browser-brave-etc.png) | Works as expected |
+
 | Opera | ![screenshot](documentation/browsers/browser-opera-home.png) | ![screenshot](documentation/browsers/browser-opera-about.png) | ![screenshot](documentation/browsers/browser-opera-contact.png) | ![screenshot](documentation/browsers/browser-opera-etc.png) | Minor differences |
 | repeat for any other tested browsers | x | x | x | x | x |
 

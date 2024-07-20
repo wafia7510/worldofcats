@@ -128,7 +128,7 @@ header nav {
     color: #ffffff;
 }
 #menu li a.active {
-    background-color:transparent;
+    background-color: #2d7594;
     color: #ffffff;
     font-weight: bold;
     text-decoration: underline;

@@ -4,9 +4,20 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/wafia7510/worldofcats)](https://github.com/wafia7510/worldofcats/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/wafia7510/worldofcats)](https://github.com/wafia7510/worldofcats)
 
-![screenshot](documentation/mockup.png)
+Welcome to World of Cats, a comprehensive and engaging platform dedicated to all things feline. This project aims to create a vibrant online community for cat enthusiasts, offering a rich array of features designed to entertain, inform, and connect users who share a passion for cats.
+
+### Purpose and Goals
+World of Cats is more than just a website; it's a sanctuary for cat lovers. Our goal is to provide an informative and interactive space where users can explore various aspects of cat ownership and appreciation. Whether you are a seasoned cat owner, considering adopting a new furry friend, or simply an admirer of cats, our platform has something to offer you.
+
+### Target Audience
+- **Cat Owners:** Individuals who own cats and are looking for tips on care, health, and activities to keep their cats happy and healthy.
+- **Cat Enthusiasts:** Anyone who loves cats and enjoys learning fun facts, viewing adorable cat photos, and engaging with a community of like-minded individuals.
+
+![screenshot](documentation/am-i-responsive.png)
 
 source: [amiresponsive](https://ui.dev/amiresponsive?url=https://wafia7510.github.io/worldofcats)
+
+
 
 ## UX
 
@@ -35,58 +46,58 @@ The "World of Cats" website is a dedicated platform for cat enthusiasts, designe
     - The Hero section is at the top of the homepage, providing a brief introduction to the world of cats. It includes a welcoming message, a captivating background image, and a call-to-action button.
     - This section immediately captures the user’s attention with a welcoming message and sets the stage for what the website is all about. It introduces the theme of the website and encourages users to explore further.
 
-![screenshot](assets/images/hero_section.png)
+![screenshot](documentation/new_hero.png)
 
 - **About Us Section-#2**
 
     - The About section introduces users to the mission and vision of the World of Cats community.
     - This section helps users understand the purpose of the website and feel connected to a community of like-minded cat lovers. It sets the tone for the user experience, welcoming them to explore further.
 
-![screenshot](assets/images/about-us.png)
-![screenshot](assets/images/about-our-mission.png)
-![screenshot](assets/images/about-us-join.png)
+![screenshot](documentation/about-us.png)
+![screenshot](documentation/about-our-mission.png)
+![screenshot](documentation/about-us-join.png)
 
 - **Cat Profiles-#3**
 
     - The Cat Profiles section showcases individual cat profiles with their pictures, names, and fun facts about their personalities. Each profile includes an image, a heading with the cat's name, and a list of interesting details
     -This feature provides users with engaging content about various cats, each with a unique personality and story. It fosters a deeper connection and understanding of different cat breeds and behaviors.
 
-![screenshot](assets/images/cat-profile.png)
+![screenshot](documentation/cat-profile.png)
 
 - **Fun Facts-#4**
 
     - The Fun Facts section shares interesting and lesser-known facts about cats in an engaging format.
     - This section educates users about cats in an enjoyable and engaging manner, enhancing their knowledge and appreciation of feline characteristics and behaviors.
 
-![screenshot](assets/images/fun-fact.png)
+![screenshot](documentation/fun-fact.png)
 
 - **Cat Tips-#5**
 
     - The Cat Tips section offers practical advice and tips for cat care, behavior management, and health. It includes bullet points of useful tips for cat owners.
     - This feature is valuable for cat owners and potential owners looking for reliable and practical information to take better care of their pets.
 
-![screenshot](assets/images/cat-tip.png)
+![screenshot](documentation/cat-tip.png)
 
 - **Gallery-#6**
 
     - The Gallery section displays a collection of beautiful cat pictures in a visually appealing layout.
     - The gallery provides visual delight to users, showcasing the beauty and diversity of cats. It is a source of enjoyment and inspiration for cat lovers.
 
-![screenshot](assets/images/view-gallery.png)
+![screenshot](documentation/view-gallery.png)
 
 - **Gallery Page-#6**
 
     - The Gallery page offers an extended collection of cat images, organized for easy browsing.
     - This dedicated page allows users to immerse themselves in a larger collection of cat photographs, enhancing their experience and engagement with the website.
 
-![screenshot](assets/images/gallery-page.png)
+![screenshot](documentation/cat-gallery.png)
 
 - **Sign Up Page-#6**
 
     - The Sign Up page features a form for users to join the World of Cats community. It includes fields for personal information and preferences.
     - This feature facilitates community building by allowing users to sign up for newsletters, updates, and special content. It helps users stay connected and engaged with the website.
 
-![screenshot](assets/images/sign-up.png)
+![screenshot](documentation/sign-up.png)
 
 
 
@@ -100,6 +111,7 @@ The "World of Cats" website is a dedicated platform for cat enthusiasts, designe
     -  A library of instructional videos on various aspects of cat care, from grooming to training.
 
 ## Tools & Technologies Used
+- [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [![GitHub](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) used for secure online code storage.
 - [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) used as a cloud-based IDE for development.
