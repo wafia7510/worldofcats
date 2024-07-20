@@ -111,6 +111,7 @@ header nav {
     
 }
 
+
 /*adding hover effects on the menu items*/
 #menu li a:hover {
     text-decoration: underline;
@@ -126,6 +127,14 @@ header nav {
 .nav-toggle-label i {
     color: #ffffff;
 }
+#menu li a.active {
+    background-color:transparent;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
 /*main element styling*/
 main {
     display: flex;
@@ -201,7 +210,7 @@ body, html {
     height: fit-content;
     position: relative;
     top: 0;
-    font-display: flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -520,6 +529,8 @@ div.gallerypage-item {
         color: #2d7594;
         text-decoration: none;
     }
+
+    
 
     header #logo-heading {
     font-size: 220%;
